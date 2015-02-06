@@ -30,6 +30,16 @@ $conf->funcs->processor->html = [
 ```
 
 
+## レイアウト - Layouts
+
+- default
+- top
+- popup
+- plain
+- naked
+- fullcolumn
+
+
 ## ライセンス - License
 
 MIT License
