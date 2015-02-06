@@ -1,0 +1,25 @@
+{
+    "name": "tomk79/px2-theme-prototype1",
+    "description": "Trial theme for Pickles2.",
+    "keywords": ["pickles"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomoya Koyanagi",
+            "email": "tomk79@gmail.com"
+        }
+    ],
+    "repositories": [
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "tomk79/px-fw-2.x": "2.0.*" ,
+        "tomk79/filesystem": "1.*"
+    },
+    "autoload": {
+        "files": [
+            "prototype1/php/theme.php"
+        ]
+    }
+}

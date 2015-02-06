@@ -1,0 +1,8 @@
+tests/htdocs/_caches/*
+tests/htdocs/_PX/_sys/*
+tests/htdocs/_PX/plugins/*
+vendor/
+composer.lock
+composer.phar
+.DS_Store
+Thumbs.db
