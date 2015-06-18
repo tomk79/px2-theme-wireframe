@@ -15,7 +15,8 @@
     },
     "require-dev": {
         "tomk79/px-fw-2.x": "2.0.*" ,
-        "tomk79/filesystem": "1.*"
+        "tomk79/filesystem": "1.*",
+        "tomk79/px2-sitemapexcel": "2.*"
     },
     "autoload": {
         "files": [
