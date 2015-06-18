@@ -108,7 +108,10 @@ return call_user_func( function(){
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
 		// テーマ
-		'theme'=>'tomk79\pickles2\themes\prototype1\theme::exec' , 
+		'theme'=>'tomk79\pickles2\themes\prototype1\theme::exec('.json_encode( array(
+			'default'=>'2col_r',
+			'copyright'=>'Your Name'
+		) ).')' , 
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
