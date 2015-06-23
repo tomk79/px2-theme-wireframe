@@ -1,0 +1,46 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "Bootstrap3:containers/container",
+      "fields": {
+       "is-fluid": "",
+       "column1": [
+        {
+         "modId": "PlainHTMLElements:PlainHTML/Markdown",
+         "fields": {
+          "main": "# Full Column\n\nフルカラムのレイアウトサンプルです。\n"
+         }
+        },
+        {
+         "modId": "Bootstrap3:grid/col2",
+         "fields": {
+          "column1": [
+           {
+            "modId": "PlainHTMLElements:PlainHTML/Markdown",
+            "fields": {
+             "main": "## 左カラム\n\n[トップへ戻る](../)"
+            }
+           }
+          ],
+          "column2": [
+           {
+            "modId": "PlainHTMLElements:PlainHTML/Markdown",
+            "fields": {
+             "main": "## 右カラム\n\n[戻る](./)\n"
+            }
+           }
+          ]
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
+ }
+}

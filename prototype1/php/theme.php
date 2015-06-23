@@ -66,6 +66,14 @@ class theme{
 
 
 	/**
+	 * get layout name
+	 */
+	public function get_layout(){
+		return @$this->page['layout'];
+	}
+
+
+	/**
 	 * グローバルナビを自動生成する
 	 */
 	public function mk_global_menu(){

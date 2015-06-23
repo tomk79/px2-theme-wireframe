@@ -1,0 +1,17 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/Markdown",
+      "fields": {
+       "main": "2カラム(右ナビ)パターンのレイアウトです。\n"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

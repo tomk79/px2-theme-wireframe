@@ -9,7 +9,7 @@
 
 </style>
 	</head>
-	<body>
+	<body class="theme_layout_<?= htmlspecialchars($theme->get_layout()); ?>">
 		<header class="theme_header" id="page_top">
 			<div class="container">
 				<div class="theme_si"><a href="<?= htmlspecialchars($px->href('')); ?>"><?= htmlspecialchars( $px->conf()->name ) ?></a></div>
@@ -52,8 +52,10 @@
 		</div><!-- /.theme_mainblock -->
 
 		<footer class="theme_footer">
+			<div class="container">
 <?php include(__DIR__.'/inc/footer_megafooter.inc'); ?>
 <?php include(__DIR__.'/inc/footer_copyright.inc'); ?>
+			</div><!-- /.container -->
 		</footer>
 	</body>
 </html>

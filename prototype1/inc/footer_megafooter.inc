@@ -1,10 +1,9 @@
 
-			<div class="container">
-				<nav class="theme_megafooter_navi">
+<nav class="theme_megafooter_navi">
 <?= $theme->mk_megafooter_menu() ?>
-				</nav>
-			</div>
-			<div class="container theme_footer_shouldernavi">
+</nav>
+
+<div class="theme_footer_shouldernavi">
 <?php
 	$shoulder_menu = $px->site()->get_shoulder_menu();
 	echo( '<ul>' );
@@ -14,5 +13,5 @@
 	}
 	echo( '</ul>' );
 ?>
-			</div>
+</div>
 

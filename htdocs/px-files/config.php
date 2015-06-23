@@ -151,6 +151,19 @@ return call_user_func( function(){
 	$conf->funcs->before_output = [
 	];
 
+	
+	// config for Plugins.
+	$conf->plugins = new stdClass;
+
+	// config for Pickles2 Desktop Tool.
+	$conf->plugins->px2dt = new stdClass;
+	$conf->plugins->px2dt->paths_module_template = [
+		"PlainHTMLElements" => "./../vendor/tomk79/px2-mod-plain-html-elements/modules/",
+		"FESS" => "./../vendor/tomk79/px2-fess/modules/",
+		"Bootstrap3" => "./../vendor/tomk79/px2-mod-bootstrap3/modules/",
+	];
+
+
 
 	return $conf;
 } );
