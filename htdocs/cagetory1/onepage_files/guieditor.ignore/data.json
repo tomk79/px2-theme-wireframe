@@ -1,0 +1,46 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "Bootstrap3:containers/container",
+      "fields": {
+       "is-fluid": "",
+       "column1": [
+        {
+         "modId": "PlainHTMLElements:PlainHTML/Markdown",
+         "fields": {
+          "main": "# onepage layout"
+         }
+        },
+        {
+         "modId": "Bootstrap3:grid/col2",
+         "fields": {
+          "column1": [
+           {
+            "modId": "PlainHTMLElements:PlainHTML/Markdown",
+            "fields": {
+             "main": "## 2col\n\n[back to toppage](./../)"
+            }
+           }
+          ],
+          "column2": [
+           {
+            "modId": "PlainHTMLElements:PlainHTML/Markdown",
+            "fields": {
+             "main": "## 2col\n\n[back](./)"
+            }
+           }
+          ]
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
+ }
+}

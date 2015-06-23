@@ -1,0 +1,30 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/Markdown",
+      "fields": {
+       "main": "3カラムのメインコンテンツエリアです。\n\n右ナビには、コンテンツが提供するコードを挿入することができるように設計しました。\n\nスモールスクリーン上では、メインコンテンツエリア、ローカルナビゲーション(左ナビ)、右ナビコンテンツ の順で整列されます。\n"
+      }
+     }
+    ]
+   }
+  },
+  "2nd": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/Markdown",
+      "fields": {
+       "main": "右ナビゲーションエリアにも、コンテンツ要素を挿入することができます。\n\n"
+      }
+     }
+    ]
+   }
+  }
+ }
+}
