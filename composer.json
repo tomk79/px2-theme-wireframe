@@ -1,5 +1,5 @@
 {
-    "name": "tomk79/px2-theme-prototype1",
+    "name": "tomk79/px2-theme-wireframe",
     "description": "Trial theme for Pickles2.",
     "keywords": ["pickles"],
     "license": "MIT",
@@ -28,7 +28,7 @@
     },
     "autoload": {
         "files": [
-            "prototype1/php/theme.php"
+            "wireframe/php/theme.php"
         ]
     }
 }

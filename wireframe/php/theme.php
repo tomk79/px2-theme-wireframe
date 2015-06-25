@@ -2,7 +2,7 @@
 /**
  * theme "pickles"
  */
-namespace tomk79\pickles2\themes\prototype1;
+namespace tomk79\pickles2\themes\wireframe;
 
 /**
  * theme "pickles" class

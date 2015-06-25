@@ -1,4 +1,4 @@
-# tomk79/px2-theme-prototype1
+# tomk79/px2-theme-wireframe
 
 ## Setup
 
@@ -11,11 +11,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://tomk79@bitbucket.org/tomk79/px2-theme-prototype1.git"
+            "url": "https://github.com/tomk79/px2-theme-wireframe.git"
         }
     ] ,
     "require": {
-        "tomk79/px2-theme-prototype1": "dev-master"
+        "tomk79/px2-theme-wireframe": "dev-master"
     }
 }
 ```
@@ -25,7 +25,7 @@
 ```
 $conf->funcs->processor->html = [
     // テーマ
-    'theme'=>'tomk79\pickles2\themes\prototype1\theme::exec()' , 
+    'theme'=>'tomk79\pickles2\themes\wireframe\theme::exec()' , 
 ];
 ```
 
@@ -34,7 +34,7 @@ $conf->funcs->processor->html = [
 ```
 $conf->funcs->processor->html = [
     // テーマ
-    'theme'=>'tomk79\pickles2\themes\prototype1\theme::exec('.json_encode(array(
+    'theme'=>'tomk79\pickles2\themes\wireframe\theme::exec('.json_encode(array(
         'default'=>'2col_r',
         'copyright'=>'Your Name'
     )).')' , 

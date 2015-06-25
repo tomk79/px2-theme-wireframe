@@ -108,7 +108,7 @@ return call_user_func( function(){
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
 		// テーマ
-		'theme'=>'tomk79\pickles2\themes\prototype1\theme::exec('.json_encode( array(
+		'theme'=>'tomk79\pickles2\themes\wireframe\theme::exec('.json_encode( array(
 			'default'=>'2col_r',
 			'copyright'=>'Your Name'
 		) ).')' , 
