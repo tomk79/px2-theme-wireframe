@@ -1,4 +1,6 @@
 @charset "utf-8";
+$bp: 580px;
+$default-border-color: #ddd;
 
 html, body{
 	background: #fff url('../images/bg.png') repeat top center;
@@ -19,7 +21,7 @@ a{
 	&:hover,
 	&.current{
 		color: #00f;
-		background-color: #eee;
+		background-color: $default-border-color;
 	}
 }
 
@@ -27,7 +29,7 @@ a{
  * ヘッダー
  */
 .theme_header{
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid $default-border-color;
 	padding:1em 0 1px 0;
 }
 
@@ -58,6 +60,11 @@ body.theme_layout_nav_r{
 		float:none;
 	}
 }
+@media all and (max-width: $bp) {
+	.theme_si{
+		padding-right: 30px;
+	}
+}
 
 /**
  * グローバルメニュー
@@ -77,7 +84,7 @@ body.theme_layout_nav_r{
 	display:block;
 	border: 1px solid #ccc;
 }
-@media all and (max-width: 580px) {
+@media all and (max-width: $bp) {
 	.theme_globalnavi{
 		display:none;
 	}
@@ -99,7 +106,7 @@ body.theme_layout_nav_r{
 .theme_shouldernavi ul li a{
 	display:block;
 }
-@media all and (max-width: 580px) {
+@media all and (max-width: $bp) {
 	.theme_shouldernavi{
 		display:none;
 	}
@@ -123,7 +130,7 @@ body.theme_layout_nav_r{
 .theme_common_navi a{
 	display: block;
 	padding:10px;
-	border: 1px solid #ccc;
+	border: 1px solid $default-border-color;
 }
 .theme_common_navi p{
 	text-align:center;
@@ -148,11 +155,74 @@ body.theme_layout_nav_r{
 }
 body.theme_layout_nav_l,
 body.theme_layout_nav_r{
-	@media all and (max-width: 767px) {
+	@media all and (max-width: $bp) {
 		.theme_common_navi{
 			display:none;
 		}
 	}
+}
+
+/**
+ * Hamburger Menu
+ */
+.theme_hamburger{
+	display: none;
+	@media all and (max-width: $bp) {
+		display:block;
+	}
+	.theme_hamburger-btn{
+		position: absolute;
+		right: 5px; top: 5px;
+		a{
+			display:block;
+			padding: 0.4em;
+			width:32px; height:32px;
+			border: 1px solid $default-border-color;
+			text-align: center;
+		}
+	}
+	.theme_hamburger-menu{
+		display:none;
+		clear: both;
+		padding: 1em 0;
+	}
+
+	nav{
+		margin-bottom:0.7em;
+		a{
+			display: block;
+			padding:10px;
+			border: 1px solid $default-border-color;
+		}
+		p{
+			text-align:center;
+			margin:1px 0; padding:0;
+		}
+
+		ul{
+			display:block;
+			margin:0; padding:0;
+			li{
+				display:block;
+				margin:1px 0; padding:0;
+				list-style-type:none;
+			}
+			ul{
+				a{
+						padding-left: 25px;
+						font-size:small;
+				}
+				ul{
+					a{
+						padding-left: 40px;
+						font-size:small;
+					}
+				}
+			}
+		}
+
+	}
+
 }
 
 /**
@@ -183,7 +253,7 @@ body.theme_layout_nav_r{
  */
 .theme_footer{
 	padding:1em 0 0.5em 0;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid $default-border-color;
 }
 
 /**

@@ -15,3 +15,4 @@
 <link rel="stylesheet" href="<?= htmlspecialchars( $px->path_plugin_files('/styles/bootstrap/css/bootstrap-theme.min.css') ); ?>">
 
 <link rel="stylesheet" href="<?= htmlspecialchars( $px->path_plugin_files('/styles/theme.css') ); ?>">
+<script src="<?= htmlspecialchars( $px->path_plugin_files('/scripts/theme.js') ); ?>"></script>
