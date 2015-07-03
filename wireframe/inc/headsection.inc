@@ -12,6 +12,6 @@
 <link rel="stylesheet" href="<?= htmlspecialchars( $px->path_plugin_files('/styles/bootstrap/css/bootstrap.min.css') ); ?>">
 <script src="<?= htmlspecialchars( $px->path_plugin_files('/styles/bootstrap/js/bootstrap.min.js') ); ?>"></script>
 <!-- Bootstrap Theme -->
-<link rel="stylesheet" href="<?= htmlspecialchars( $px->path_plugin_files('/styles/bootstrap-theme.min.css') ); ?>">
+<link rel="stylesheet" href="<?= htmlspecialchars( $px->path_plugin_files('/styles/bootstrap/css/bootstrap-theme.min.css') ); ?>">
 
 <link rel="stylesheet" href="<?= htmlspecialchars( $px->path_plugin_files('/styles/theme.css') ); ?>">
