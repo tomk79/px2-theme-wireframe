@@ -36,8 +36,9 @@ $conf->funcs->processor->html = [
     // テーマ
     'theme'=>'tomk79\pickles2\themes\wireframe\theme::exec('.json_encode(array(
         'default'=>'2col_r',
-        'copyright'=>'Your Name'
-    )).')' , 
+        'copyright'=>'Your Name',
+        'attr_bowl_name_by'=>'data-contents-area'
+    )).')' ,
 ];
 ```
 
@@ -46,6 +47,8 @@ $conf->funcs->processor->html = [
         <dd>デフォルトのレイアウト(default: 2col_r)</dd>
     <dt>copyright</dt>
         <dd>著作権者名 (default: ********)</dd>
+    <dt>attr_bowl_name_by</dt>
+        <dd>bowl名</dd>
 </dl>
 
 
@@ -76,5 +79,3 @@ MIT License
 - (C)Tomoya Koyanagi <tomk79@gmail.com>
 - website: <http://www.pxt.jp/>
 - Twitter: @tomk79 <http://twitter.com/tomk79/>
-
-

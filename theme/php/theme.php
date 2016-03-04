@@ -12,6 +12,7 @@ class theme{
 	private $path_tpl;
 	private $page;
 	private $options;
+	private $attr_bowl_name_by;
 
 	/**
 	 * constructor
@@ -29,6 +30,12 @@ class theme{
 		}
 		// $this->px->realpath_plugin_private_cache('/test/abc/test.inc');
 		$this->px->fs()->copy_r( __DIR__.'/../theme_files/', $this->px->realpath_plugin_files('/') );
+
+		$attr_bowl_name_by = 'data-contents-area';
+		if( strlen(@$optattr_bowl_name_by) ){
+			$attr_bowl_name_by = $optattr_bowl_name_by;
+		}
+
 	}
 
 	/**
@@ -74,6 +81,13 @@ class theme{
 
 
 	/**
+	 * $attr_bowl_name_by 設定の値を受け取る
+	 */
+	public function get_attr_bowl_name_by(){
+		return $this->attr_bowl_name_by;
+	}
+
+	/**
 	 * グローバルナビを自動生成する
 	 */
 	public function mk_global_menu(){
@@ -113,7 +127,7 @@ class theme{
 	}
 	/**
 	 * 指定されたページの小階層のメニューを展開する
-	 * 
+	 *
 	 * @param string $parent_page_id 親ページのページID
 	 * @return string ページリストのHTMLソース
 	 */
