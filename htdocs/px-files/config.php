@@ -110,7 +110,7 @@ return call_user_func( function(){
 		// テーマ (self)
 		'theme'=>'tomk79\pickles2\themes\wireframe\theme::exec('.json_encode( array(
 			'default'=>'2col_r',
-			'copyright'=>'Your Name'
+			'copyright'=>'Your Name (on Self provide theme)'
 		) ).')' ,
 
 		// テーマ (multitheme)
@@ -119,7 +119,13 @@ return call_user_func( function(){
 		// 	'cookie_theme_switch'=>'THEME',
 		// 	'path_theme_collection'=>'../',
 		// 	'attr_bowl_name_by'=>'data-contents-area',
-		// 	'default_theme_id'=>'theme'
+		// 	'default_theme_id'=>'theme' ,
+		// 	'options'=>array(
+		// 		'theme'=>array(
+		// 			'default'=>'2col_r',
+		// 			'copyright'=>'Your Name (on px2-multitheme)'
+		// 		)
+		// 	)
 		// ]).')' ,
 
 		// Apache互換のSSIの記述を解決する
