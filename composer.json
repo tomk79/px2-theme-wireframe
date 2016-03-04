@@ -23,6 +23,7 @@
         "pickles2/broccoli-module-plain-html-elements": "dev-master",
         "pickles2/px2-px2dthelper": "dev-master",
         "pickles2/px2-sitemapexcel": "2.*",
+        "pickles2/px2-multitheme": "dev-develop",
         "tomk79/filesystem": "1.*",
         "tomk79/px2-mod-bootstrap3": "dev-master"
     },

@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+include(__DIR__.'/inc/setting.inc');
+?><!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8" />
@@ -6,7 +8,7 @@
 <?php include(__DIR__.'/inc/headsection.inc'); ?>
 <?= $px->bowl()->pull('head') ?>
 	</head>
-	<body class="theme_layout_<?= htmlspecialchars($theme->get_layout()); ?>">
+	<body class="theme_layout_<?= htmlspecialchars($mytheme->get_layout()); ?>">
 		<header class="theme_header" id="page_top">
 			<div class="container">
 				<div class="theme_si"><?= htmlspecialchars( $px->conf()->name ); ?></div>

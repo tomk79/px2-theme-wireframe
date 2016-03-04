@@ -1,3 +1,6 @@
 <?php
-include(__DIR__.'/'.urlencode($theme->get_option('default')).'.html');
+include(__DIR__.'/inc/setting.inc');
+$default = $mytheme->get_option('default');
+if(!is_dir(__DIR__.'/'.urlencode($default).'.html')){$default = '2col_r';}
+include(__DIR__.'/'.urlencode($default).'.html');
 ?>

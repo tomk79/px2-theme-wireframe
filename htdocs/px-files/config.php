@@ -107,11 +107,20 @@ return call_user_func( function(){
 		// ページ内目次を自動生成する
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
-		// テーマ
+		// テーマ (self)
 		'theme'=>'tomk79\pickles2\themes\wireframe\theme::exec('.json_encode( array(
 			'default'=>'2col_r',
 			'copyright'=>'Your Name'
 		) ).')' ,
+
+		// テーマ (multitheme)
+		// 'theme'=>'tomk79\pickles2\multitheme\theme::exec('.json_encode([
+		// 	'param_theme_switch'=>'THEME',
+		// 	'cookie_theme_switch'=>'THEME',
+		// 	'path_theme_collection'=>'../',
+		// 	'attr_bowl_name_by'=>'data-contents-area',
+		// 	'default_theme_id'=>'theme'
+		// ]).')' ,
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
