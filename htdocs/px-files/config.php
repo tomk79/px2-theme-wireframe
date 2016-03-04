@@ -111,7 +111,7 @@ return call_user_func( function(){
 		'theme'=>'tomk79\pickles2\themes\wireframe\theme::exec('.json_encode( array(
 			'default'=>'2col_r',
 			'copyright'=>'Your Name'
-		) ).')' , 
+		) ).')' ,
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
@@ -151,15 +151,15 @@ return call_user_func( function(){
 	$conf->funcs->before_output = [
 	];
 
-	
+
 	// config for Plugins.
 	$conf->plugins = new stdClass;
 
 	// config for Pickles2 Desktop Tool.
 	$conf->plugins->px2dt = new stdClass;
 	$conf->plugins->px2dt->paths_module_template = [
-		"PlainHTMLElements" => "./../vendor/tomk79/px2-mod-plain-html-elements/modules/",
-		"FESS" => "./../vendor/tomk79/px2-fess/modules/",
+		"PlainHTMLElements" => "./../vendor/pickles2/broccoli-module-plain-html-elements/modules/",
+		"FESS" => "./../vendor/pickles2/broccoli-module-fess/modules/",
 		"Bootstrap3" => "./../vendor/tomk79/px2-mod-bootstrap3/modules/",
 	];
 
